@@ -26,18 +26,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit some common riceDroid stuff
+# Inherit some common crDroid stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
 FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := false
-
-
-# RiceStuff
-SUSHI_BOOTANIMATION := 1080
-RICE_CHIPSET := MT6768
-RICE_MAINTAINER := orkunergun
 
 #
 # All components inherited here go to system_ext image
