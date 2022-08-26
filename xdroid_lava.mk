@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit some common xD stuff
-$(call inherit-product, vendor/xdroid/config/common.mk
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
 # Xdroid Stuff
 XDROID_BOOT := 1080
