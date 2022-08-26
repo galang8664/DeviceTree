@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/pixys_lava.mk
+   $(LOCAL_DIR)/xdroid_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    pixys_lava-user \
-    pixys_lava-userdebug \
-    pixys_lava-eng
+    xdroid_lava-user \
+    xdroid_lava-userdebug \
+    xdroid_lava-eng
