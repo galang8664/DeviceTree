@@ -26,15 +26,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit some common xD stuff
-$(call inherit-product, vendor/xdroid/config/common.mk
+# Inherit some common Fluid stuff
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
-# Xdroid Stuff
-XDROID_BOOT := 1080
-XDROID_MAINTAINER := orkunergun
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+# Fluid stuff
+FLUID_BUILD_TYPE := UNOFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.fluid.maintainer=orkunergun \
+  ro.fluid.cpu=MT6768
 TARGET_SUPPORTS_QUICK_TAP := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
@@ -46,7 +45,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lava
-PRODUCT_NAME := xdroid_lava
+PRODUCT_NAME := fluid_lava
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi 9
 PRODUCT_MANUFACTURER := xiaomi

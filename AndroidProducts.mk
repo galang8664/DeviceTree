@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/xdroid_lava.mk
+   $(LOCAL_DIR)/fluid_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_lava-user \
-    xdroid_lava-userdebug \
-    xdroid_lava-eng
+    fluid_lava-user \
+    fluid_lava-userdebug \
+    fluid_lava-eng
