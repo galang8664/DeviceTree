@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/arrow_lava.mk
+   $(LOCAL_DIR)/cherish_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_lava-user \
-    arrow_lava-userdebug \
-    arrow_lava-eng
+    cherish_lava-user \
+    cherish_lava-userdebug \
+    cherish_lava-eng
